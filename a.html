@@ -4,19 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>                          
-    
-    <link rel="stylesheet" href="style_flex.css">
-    
+    <title>Document</title>
+    <style>
+        /* div{
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+            border: 1px solid #000;
+            transition: width 5s, height 5s, border 5s, transform 5s;
+            -webkit-transition: width 5s, height 5s, border 5s, -webkit-transform 5s;
+        }
+        div:hover{
+            width: 200px;
+            height: 100px;
+            border: 10px solid red;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg); 
+
+        }*/
+        div{
+            text-align: right;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+                                       
+            
+
+        }
+        div#box2{
+            background-color: blue;
+            transform: translate(100px, 100px);
+        }
+        div#box3{
+            background-color: red;
+            transform: rotate(45deg);
+        }
+        div#box4{
+            background-color: green;
+            transform: scale(2, 2);
+        }
+        
+        div#box5{
+            background-color: purple;
+            transform: skew(30deg, 0);
+        }
+    </style>
 </head>
 <body>
-    <div class="wrap">
-        <div class="container">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-        </div>
-    </div>
     
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div id="box5">box5</div>
+    
+
 </body>
 </html>
