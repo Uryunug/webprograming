@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>값을 확인해보세요!</h1>
+    <h1 id="test">값을 확인해보세요</h1>
+    <button onclick="print_message()">더한값</button>
+    <script>
+        let x = parseInt(prompt("더하고싶은 숫자를 입력하시오 1"));
+        let y = parseInt(prompt("더하고싶은 숫자를 입력하시오 2"));
+        let z = x + y;
+        function print_message(){
+            
+            document.getElementById("test").innerHTML = z;
+        }
+    </script>
+</body>
+</html>
