@@ -1,20 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 id="test"></h1>
-    <button onclick="print_message()">클릭해보세요</button>
-    <script>
-        
-        function print_message(){
-            let message = prompt("이름을 입력하시오")
-            document.getElementById("test").innerHTML = "welcome " + message;
+    <title>주사위 굴리기</title>
+    <style>
+        * {
+            font-family: 굴림, sans-serif;
+            text-align: center;
         }
+
+        #dice {
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            background-color: yellow;
+            border: 1px solid gray;
+            border-radius: 10px;
+            font-size: 100px;
+        }
+    </style>
+    <script>
+        function roll() {
+            let a = math.random(1, 6);
+            document.getElementById("dice") = a; 
+
+        };
     </script>
+</head>
+
+<body>
+    <h3>주사위 굴리기 게임입니다.</h3>
+    <p id="dice"> </p>
+    <button onclick="roll()">주사위 굴리기</button>
 </body>
+
 </html>
